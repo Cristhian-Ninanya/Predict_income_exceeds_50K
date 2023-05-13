@@ -30,17 +30,17 @@ Listing of attributes:
 
 ## Correlation Matrix:
 
-![alt text](https://github.com/Cristhian-Ninanya/Predict_income_exceeds_50K/blob/master/images/correlation.jpg?raw=true)
+![alt text](https://github.com/Cristhian-Ninanya/Predict_income_exceeds_50K/blob/master/images/correlation.png?raw=true)
 
 * Apparently, some feature like 'fnlwgt', 'race' or 'native-country' have low correlation with target feature 'earn'.
 
 ## Results using Decision Tree
 
-![alt text](https://github.com/Cristhian-Ninanya/Predict_income_exceeds_50K/blob/master/images/importance_tree.jpg?raw=true)
+![alt text](https://github.com/Cristhian-Ninanya/Predict_income_exceeds_50K/blob/master/images/feature_import_tree.png?raw=true)
 
 ```
-Train Accuracy: 80.12 %
-Test Accuracy: 80.60 %
+Train Accuracy: 75.81 %
+Test Accuracy: 74.81 %
 ```
 **OBS:**
 * Using "Desicion Tree model", apparently features "marital-status" and "capital-gain" have more importace.
@@ -50,23 +50,27 @@ Test Accuracy: 80.60 %
 
 ## Results using Random Forest:
 
-![alt text](https://github.com/Cristhian-Ninanya/Predict_income_exceeds_50K/blob/master/images/importance_forest.jpg?raw=true)
+![alt text](https://github.com/Cristhian-Ninanya/Predict_income_exceeds_50K/blob/master/images/feature_import_forest.png?raw=true)
 
 ```
-Train Accuracy:  98.77 %
-Test Accuracy:  85.16 %
+Accuracy_train:  99.05 %
+Accuracy_test:  80.17 %
 ```
 
 ```
               precision    recall  f1-score   support
 
-       <=50K       0.88      0.94      0.91      7434
-        >50K       0.74      0.58      0.65      2335
+       <=50K       0.79      0.82      0.80      2322
+        >50K       0.81      0.79      0.80      2383
 
-    accuracy                           0.85      9769
-   macro avg       0.81      0.76      0.78      9769
-weighted avg       0.84      0.85      0.84      9769
+    accuracy                           0.80      4705
+   macro avg       0.80      0.80      0.80      4705
+weighted avg       0.80      0.80      0.80      4705
 ```
+## Confusion Matrix:
+
+![alt text](https://github.com/Cristhian-Ninanya/Predict_income_exceeds_50K/blob/master/images/conf_matrix.png?raw=true)
+
 
 **OBS:**
 * "Accuracy_Test" improved using Random Forest, but "Accuracy_train" is almost overfitting. 
@@ -75,8 +79,7 @@ weighted avg       0.84      0.85      0.84      9769
 
 **Final Observations:**
 
-* Using Radom Forest give us more precision than decision tree, but there are some considerations
-  * Dataset is unbalanced (look at Confusion Matrix).
-  * "Precision", "Recall", "f1-score" and "support" have better results for '<=50k' (because of unbalanced dataset)
-
-* Comparing "Correlation" and "Randon Forest Feature importance" there are many similitude, except for feature "fnlwgt".It would be interesting to understand the relevance of this feature.
+* "Random Forest provides higher precision compared to Decision Tree, but there are some factors to consider."
+* "Random undersampling of the dataframe during training may influence the results."
+* "The dataframe contains '?' values in multiple features."
+* "When comparing the 'Correlation' and 'Random Forest Feature Importance' methods, there are many similarities, except for the feature 'fnlwgt' Further investigation is needed to understand the relevance of this feature."
