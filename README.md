@@ -36,7 +36,7 @@ Listing of attributes:
 
 ## Results using Decision Tree
 
-![alt text](https://github.com/Cristhian-Ninanya/Predict_income_exceeds_50K/blob/main/images/feature_import_tree.png?raw=true)
+![alt text](https://github.com/Cristhian-Ninanya/Predict_income_exceeds_50K/blob/main/images/features_import_tree.png?raw=true)
 
 ```
 Train Accuracy: 75.81 %
@@ -50,7 +50,7 @@ Test Accuracy: 74.81 %
 
 ## Results using Random Forest:
 
-![alt text](https://github.com/Cristhian-Ninanya/Predict_income_exceeds_50K/blob/main/images/feature_import_forest.png?raw=true)
+![alt text](https://github.com/Cristhian-Ninanya/Predict_income_exceeds_50K/blob/main/images/features_import_forest.png?raw=true)
 
 ```
 Accuracy_train:  99.05 %
