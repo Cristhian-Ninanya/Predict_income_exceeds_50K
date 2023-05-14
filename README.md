@@ -30,13 +30,13 @@ Listing of attributes:
 
 ## Correlation Matrix:
 
-![alt text](https://github.com/Cristhian-Ninanya/Predict_income_exceeds_50K/blob/master/images/correlation.png?raw=true)
+![alt text](https://github.com/Cristhian-Ninanya/Predict_income_exceeds_50K/blob/main/images/correlation.png?raw=true)
 
 * Apparently, some feature like 'fnlwgt', 'race' or 'native-country' have low correlation with target feature 'earn'.
 
 ## Results using Decision Tree
 
-![alt text](https://github.com/Cristhian-Ninanya/Predict_income_exceeds_50K/blob/master/images/feature_import_tree.png?raw=true)
+![alt text](https://github.com/Cristhian-Ninanya/Predict_income_exceeds_50K/blob/main/images/feature_import_tree.png?raw=true)
 
 ```
 Train Accuracy: 75.81 %
@@ -50,7 +50,7 @@ Test Accuracy: 74.81 %
 
 ## Results using Random Forest:
 
-![alt text](https://github.com/Cristhian-Ninanya/Predict_income_exceeds_50K/blob/master/images/feature_import_forest.png?raw=true)
+![alt text](https://github.com/Cristhian-Ninanya/Predict_income_exceeds_50K/blob/main/images/feature_import_forest.png?raw=true)
 
 ```
 Accuracy_train:  99.05 %
@@ -69,7 +69,7 @@ weighted avg       0.80      0.80      0.80      4705
 ```
 ## Confusion Matrix:
 
-![alt text](https://github.com/Cristhian-Ninanya/Predict_income_exceeds_50K/blob/master/images/conf_matrix.png?raw=true)
+![alt text](https://github.com/Cristhian-Ninanya/Predict_income_exceeds_50K/blob/main/images/conf_matrix.png?raw=true)
 
 
 **OBS:**
